@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    mysql:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: "jdbc:mysql://localhost:3306/?useSSL=false&serverTimezone=Asia/Seoul&allowMultiQueries=true&autoReconnection=true"
+      username: root
+      password: 1111
+      initial-size: 5
+      min-idle: 8
+      max-idle: 8
+      max-total : 8
+      validation-query: select 1
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
